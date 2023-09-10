@@ -30,7 +30,9 @@
 Напечатать полученный в результате массив в формате с пятью знаками после запятой.<br />
 
 ### Код программы: [файл тут](https://github.com/frizyyu/lab1_prog/blob/main/Main.java)<br />
-```public class Main {
+```
+   import java.util.Arrays;
+   public class Main {
    public static void main(String[] args) {
 
        int[] c = new int[6]; //массив из 6 элементов, тк в диапазоне от 5 до 15 6 нечётных
