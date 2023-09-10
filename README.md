@@ -32,6 +32,7 @@
 ### Код программы: [файл тут](https://github.com/frizyyu/lab1_prog/blob/main/Main.java)<br />
 ```
    import java.util.Arrays;
+
    public class Main {
    public static void main(String[] args) {
 
