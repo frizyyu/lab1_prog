@@ -23,7 +23,7 @@
 1. Создать двумерный массив c размером 6x17. Вычислить его элементы по следующей формуле (где x = x[j]):<br />
 1. если c[i] = 7, то ![Снимок экрана 2023-09-10 211250 copy](https://github.com/frizyyu/lab1_prog/assets/84192047/5a4bc657-b02f-4741-bd45-79e5b8a2e8f8)<br />
 
-1. если c[i] ∈ {9, 11, 15}, то ![Снимок экрана 2023-09-10 211323](https://github.com/frizyyu/lab1_prog/assets/84192047/0f5147b4-cfa1-43a4-9c19-e1088d6855fb)<br />
+1. если c[i] ∈ {9, 11, 15}, то ![Снимок экрана 2023-09-10 211250 copy1](https://github.com/frizyyu/lab1_prog/assets/84192047/3f1722ef-5871-4e1c-b5a5-3b4d7cf63165)<br />
 
 1. для остальных значений ![Снимок экрана 2023-09-10 211250 copy2](https://github.com/frizyyu/lab1_prog/assets/84192047/41bee4bf-eff8-4ad5-918c-c64472e67db8)<br />
 
