@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -11,7 +9,7 @@ public class Main {
 
         double[] x = new double[17];
 
-        String st = "[";
+        String st = "";
 
         for(int i=5; i<=15; i++){
             if (i % 2 == 1)
@@ -27,8 +25,9 @@ public class Main {
         double[][] n = new double[6][17];
         for (int i=0; i < 6; i++){
             for (int j=0; j < 17; j++){
-                if (c[i] == 7)
+                if (c[i] == 7){
                     n[i][j] = Math.pow(Math.pow((2 * Math.pow(Math.E, x[j])), Math.asin((x[j] + 6) / 18)), (double) 1/3); //формула 1
+                    }
                 else if (c[i] == 9 || c[i] == 11 || c[i] == 15) {
                     n[i][j] = Math.cos(Math.pow(((double)3 / 4) / (x[j] + 1 + (double) 1/2), 3)); //формула 2
                 }
@@ -39,16 +38,14 @@ public class Main {
         }
 
         for (int i = 0; i < 6; i++){
-            st += "[";
-            for (int j = 0; j < 17; j++)
+            for (int j = 0; j < 17; j++){
                 if (j != 16)
                     st += String.format("%.5f, ", n[i][j]);
                 else
                     st += String.format("%.5f", n[i][j]);
-            if (i == 5)
-                st += "]]";
-            else
-                st += "], \n";
+            }
+            if (i != 5)
+                st += "\n";
 
         }
         System.out.println(st);
