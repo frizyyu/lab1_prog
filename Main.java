@@ -25,15 +25,13 @@ public class Main {
         double[][] n = new double[6][17];
         for (int i=0; i < 6; i++){
             for (int j=0; j < 17; j++){
-                if (c[i] == 7){
-                    n[i][j] = Math.pow(Math.pow((2 * Math.pow(Math.E, x[j])), Math.asin((x[j] + 6) / 18)), (double) 1/3); //формула 1
-                    }
-                else if (c[i] == 9 || c[i] == 11 || c[i] == 15) {
-                    n[i][j] = Math.cos(Math.pow(((double)3 / 4) / (x[j] + 1 + (double) 1/2), 3)); //формула 2
-                }
-                else{
-                    n[i][j] = Math.pow(Math.pow(Math.pow(Math.log(Math.abs(x[j])), ((Math.pow((x[j] / 0.5), 3) - (double) 3/4) / 2) / 3), (double) 1/3), 0.5 * (Math.pow((double) 2/3 + Math.pow((double)1/2 * (x[j] / (1 - Math.asin((x[j] + 6) / 18))), Math.asin((x[j] + 6) / 18)), 2) + (double) 1/4)); //формула 3
-                }
+                n[i][j] = switch (c[i]) {
+                    case 7 -> Math.pow(Math.pow((2 * Math.pow(Math.E, x[j])), Math.asin((x[j] + 6) / 18)), (double) 1 / 3); //формула 1
+
+                    case 9, 11, 15 -> Math.cos(Math.pow(((double) 3 / 4) / (x[j] + 1 + (double) 1 / 2), 3)); //формула 2
+
+                    default -> Math.pow(Math.pow(Math.pow(Math.log(Math.abs(x[j])), ((Math.pow((x[j] / 0.5), 3) - (double) 3 / 4) / 2) / 3), (double) 1 / 3), 0.5 * (Math.pow((double) 2 / 3 + Math.pow((double) 1 / 2 * (x[j] / (1 - Math.asin((x[j] + 6) / 18))), Math.asin((x[j] + 6) / 18)), 2) + (double) 1 / 4)); //формула 3
+                };
             }
         }
 
