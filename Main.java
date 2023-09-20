@@ -38,7 +38,7 @@ public class Main {
         for (int i = 0; i < 6; i++){
             for (int j = 0; j < 17; j++){
                 if (j != 16)
-                    st += String.format("%.5f, ", n[i][j]);
+                    st += String.format("%.5f\t", n[i][j]);
                 else
                     st += String.format("%.5f", n[i][j]);
             }
